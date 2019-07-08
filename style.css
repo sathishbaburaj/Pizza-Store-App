@@ -17,6 +17,7 @@ header li{
     float: left;
     display: inline;
     padding: 0 20px 0 20px;
+    margin-top: 20px;
 }
 
 
@@ -27,10 +28,12 @@ header li{
     text-align: center;
 }
 
+
 header {
     background-color: crimson;
     font-weight: bold;
     height: 60px;
+    
 }
 
 header a:hover{
@@ -38,5 +41,13 @@ header a:hover{
     font-weight: bold;
 }
 
+header a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    }
+
+   
 
 
