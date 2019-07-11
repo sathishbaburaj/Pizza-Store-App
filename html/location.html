@@ -1,0 +1,21 @@
+<html>
+
+<head>
+    <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css" />
+    <link type="text/css" rel="stylesheet" href="../css/style-location.css" />
+
+    <script src="../js/map.js">  </script>
+</head>
+
+<body style="border: 0; margin: 0;">
+    <p class=loc>Enter your address and click the button to get to your favourite Pizza store.</p>
+    <input id="userAddress" type="text" />
+    <button onclick="getAddress()">Address</button><br><br>
+    <p class=loc>Click the direction button to see the route</p>
+    <button onclick="directions()">Directions</button><br><br>
+
+    <div id="map"><img src="https://www.mapquestapi.com/staticmap/v4/getmap?size=600,500&type=map&zoom=7&center=43.6532,-79.3832&imagetype=JPEG&key=o7PvIkuREj2G4vdr1TNevZ0jZXSOB4CD"alt="Map location" height=400px width =400px></div>
+</body>
+
+</html>

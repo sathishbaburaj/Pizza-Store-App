@@ -1,0 +1,13 @@
+body{
+    /* background-image: url(../Images/Location_image_background.jpg); */
+
+    
+}
+    #map{
+    width:50%;
+    height: 50%;
+    
+}
+.loc{
+    color: red;
+}
