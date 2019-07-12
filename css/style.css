@@ -52,13 +52,6 @@ html, body {
     background-color: rgba(255, 255, 255, .3)
 }
 
-#cart{
-    border-radius: 50%;
-    position: fixed;
-    margin-left: 2%;
-    cursor: pointer;
-}
-
 .main-header {
     background-color: rgba(0, 0, 0, .6);
     background-blend-mode: multiply;
@@ -328,14 +321,6 @@ html, body {
     text-align: end;
     margin-top: 10px;
     margin-right: 10px;
-}
-
-.cart-tax-title{
-    font-weight: bold;
-    font-size: 1.5em;
-    color: black;
-    margin-right: 30px;
-
 }
 
 .cart-total-title {
