@@ -81,14 +81,22 @@ nav {
 }
 
 #option-btn{
-    /* justify-content: center; */
-    /* padding-left: 12%; */
     background-color: coral;
     width: 100%;
     cursor: pointer;
     margin-bottom: 2%;
-    display: inline;
-    border-bottom: none;
+}
+
+#carouselExampleIndicators{
+    width: 66%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.d-block {
+    height: 300px;
+    margin-bottom: 3%;
 }
 
 .content-section {
