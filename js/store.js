@@ -24,6 +24,7 @@ if (document.readyState == 'loading') {
     }
   
     document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
+ 
   }
   
   function purchaseClicked() {
@@ -64,12 +65,7 @@ if (document.readyState == 'loading') {
     cartRow.classList.add('cart-row')
     var cartItems = document.getElementsByClassName('cart-items')[0]
     var cartItemNames = cartItems.getElementsByClassName('cart-item-title')
-    for (var i = 0; i < cartItemNames.length; i++) {
-        if (cartItemNames[i].innerText == title) {
-            alert('This item is already added to the cart')
-            return
-        }
-    }
+    
     var cartRowContents = `
         <div class="cart-item cart-column">
             <img class="cart-item-image" src="${imageSrc}" width="100" height="100">
@@ -89,8 +85,8 @@ if (document.readyState == 'loading') {
   function updateCartTotal() {
     var cartItemContainer = document.getElementsByClassName('cart-items')[0]
     var cartRows = cartItemContainer.getElementsByClassName('cart-row')
-    var total = 0
-    var tax = 2.50
+    var total = 0;
+    var tax = 2.50;
     for (var i = 0; i < cartRows.length; i++) {
         var cartRow = cartRows[i]
         var priceElement = cartRow.getElementsByClassName('cart-price')[0]
@@ -102,3 +98,4 @@ if (document.readyState == 'loading') {
     total = Math.round(total * 100) / 100
     document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
   }
+  
