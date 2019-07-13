@@ -340,3 +340,82 @@ html, body {
     margin: 40px auto 80px auto;
     font-size: 1.75em;
 }
+
+.info{
+    width: 75%;
+    margin: auto;
+    border: 1px solid gray;
+    
+}
+
+
+.container-about{
+    padding-top: 100px;
+}
+
+.hidden{
+    display: none;
+}
+
+
+
+
+.suite{
+    margin-right: 65px;
+    margin-left: 5px;
+}
+
+
+#province{
+    margin-right: 257px;
+    padding: 10px;
+}
+
+section{
+    padding-bottom: 80px;
+   }
+
+   #question h3{
+    background-color: #777;
+    color: white;
+    }
+
+    #note{
+        margin-left: 20px;
+        padding-top:15px;
+    }
+
+    .btn-btn-primary{
+        margin-left: 400px;
+        margin-top: 50px;
+        color: white;
+        background-color: #56CCF2;
+        border: none;
+        border-radius: .3em;
+        font-weight: bold;
+        width: 150px;
+        height: 50px;
+        
+
+
+    }
+
+    form{
+        margin-left: 5px;
+    }
+
+    .province .postal{
+        padding: 10px;
+    }
+
+    #postal{
+        width: 200px;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    #btn1{
+        margin-left: 5px;
+        padding: 8px;
+    }
+
