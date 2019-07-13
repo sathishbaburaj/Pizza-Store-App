@@ -1,21 +1,47 @@
 <html>
-
-<head>
+  <head>
     <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
-    <link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css" />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
     <link type="text/css" rel="stylesheet" href="../css/style-location.css" />
+  </head>
 
-    <script src="../js/map.js">  </script>
-</head>
+  <body>
+    <h4>
+      Enter your address to get Directions to your favourite Pizza store.
+      <span class="badge badge-secondary"></span>
+    </h4>
+    <div class="container">
+      <!-- Content here -->
 
-<body style="border: 0; margin: 0;">
-    <p class=loc>Enter your address and click the button to get to your favourite Pizza store.</p>
-    <input id="userAddress" type="text" />
-    <button onclick="getAddress()">Address</button><br><br>
-    <p class=loc>Click the direction button to see the route</p>
-    <button onclick="directions()">Directions</button><br><br>
+      <input id="userAddress" type="text" />
+      <button type="button" class="btn btn-primary" onclick="addDirections()">
+        Directions
+      </button>
+      <button type="button" class="btn2 btn btn-primary">update the start location</button>
 
-    <div id="map"><img src="https://www.mapquestapi.com/staticmap/v4/getmap?size=600,500&type=map&zoom=7&center=43.6532,-79.3832&imagetype=JPEG&key=o7PvIkuREj2G4vdr1TNevZ0jZXSOB4CD"alt="Map location" height=400px width =400px></div>
-</body>
+      <!-- <button onclick="addDirections()">Directions</button><br /><br /> -->
 
+      <p id="map">
+        <img
+          src="https://www.mapquestapi.com/staticmap/v5/map?key=o7PvIkuREj2G4vdr1TNevZ0jZXSOB4CD&locations='55 st george street,Toronto,ontario'|https://assets.mapquestapi.com/icon/v2/flag-sm-Pizza@1.5x.png
+
+        &size=600,400 "
+          class="img-fluid"
+          alt="Map location"
+        />
+      </p>
+    </div>
+    <script src="../js/map.js"></script>
+  </body>
 </html>
