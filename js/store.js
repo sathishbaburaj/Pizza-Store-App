@@ -1,7 +1,7 @@
 if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready)
   } else {
-    ready()
+    ready();
   }
   
   function ready() {
@@ -23,10 +23,10 @@ if (document.readyState == 'loading') {
         button.addEventListener('click', addToCartClicked)
     }
   
-    document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
- 
-  }
+    document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked);
+  };
   
+
   function purchaseClicked() {
     var cartItems = document.getElementsByClassName('cart-items')[0]
     while (cartItems.hasChildNodes()) {
