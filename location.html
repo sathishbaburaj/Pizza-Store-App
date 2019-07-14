@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Pizza Store</title>
+        <meta name="description" content="This is the description">
+        <link rel="stylesheet" href="css/style-location.css">
+        <script src="js/store.js" async></script>
+
+        <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
+        <link
+          type="text/css"
+          rel="stylesheet"
+          href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css"
+        />
+        <link
+          rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous"
+        />
+    
+        <link type="text/css" rel="stylesheet" href="../css/style-location.css" />
+    </head>
+    <body>
+        <header class="main-header">
+            <nav class="main-nav nav">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="location.html">LOCATION</a></li>
+                </ul>
+            </nav>
+            <h1 class="band-name band-name-large">The Pizza Store</h1>
+    </header>
+
+
+  <body>
+    <h4>
+      <p id="p1">For Directions, Please Enter Your Address:</p>
+      <span class="badge badge-secondary"></span>
+    </h4>
+    <div id="div1" class="container">
+      <!-- Content here -->
+
+      <input id="userAddress" type="text" value="55 St George">
+      <button id="btn-1" type="button" class="btn btn-primary" onclick="addDirections()">
+        Directions
+      </button>
+      <button id="btn-2" type="button" class="btn2 btn btn-primary">Update the start location</button>
+
+      <!-- <button onclick="addDirections()">Directions</button><br /><br /> -->
+
+      <p id="map">
+        <img
+          src="https://www.mapquestapi.com/staticmap/v5/map?key=o7PvIkuREj2G4vdr1TNevZ0jZXSOB4CD&locations='55 st george street,Toronto,ontario'|https://assets.mapquestapi.com/icon/v2/flag-sm-Pizza@1.5x.png
+
+        &size=600,400 "
+          class="img-fluid"
+          alt="Map location"
+        />
+      </p>
+    </div>
+
+    <footer id="footer1" class="main-footer">
+      <div id="footer"  class="container main-footer-container">
+          <h3 class="band-n">THE PIZZA STORE</h3>
+          <ul class="nav footer-nav">
+              <li>
+                  <a href="https://accounts.google.com/ServiceLogin/signinchooser?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank">
+                      <img  class="footer-logo" src="Images/gmail.jpg" width="50px">
+                  </a>
+              </li>
+              <li>
+                  <a href="https://www.spotify.com" target="_blank">
+                      <img src="Images/youtube.jpg" width="50px">
+                  </a>
+              </li>
+              <li>
+                  <a href="https://www.facebook.com/" target="_blank">
+                      <img src="Images/facebook.jpg" width="50px">
+                  </a>
+              </li>
+          </ul>
+      </div>
+  </footer>
+
+    <script src="../js/map.js"></script>
+  </body>
+</html>

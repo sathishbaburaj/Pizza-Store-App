@@ -52,6 +52,31 @@ html, body {
     background-color: rgba(255, 255, 255, .3)
 }
 
+#cart{
+    border-radius: 50%;
+    position: fixed;
+    margin-left: 2%;
+    cursor: pointer;
+}
+
+#deal1{
+    width: 350px;
+    border-radius: 10%;
+    border: solid 1px;
+}
+
+#deal2{
+    width: 350px;
+    border-radius: 10%;
+    border: solid 1px;
+}
+
+#deal3{
+    width: 350px;
+    border-radius: 10%;
+    border: solid 1px;
+}
+
 .main-header {
     background-color: rgba(0, 0, 0, .6);
     background-blend-mode: multiply;
@@ -80,6 +105,8 @@ html, body {
     max-width: 900px;
     margin: 0 auto;
     padding: 0 1.5em;
+    background-color: white;
+    
 }
 .section-header {
     font-family: "Metal Mania";
@@ -97,30 +124,45 @@ html, body {
     border-radius: 50%;
 }
 
-.main-footer {
-    background-color: #56CCF2;
-    color: white;
-    padding: .25em 0;
-}
-
-.main-footer-container {
-    display: flex;
-    align-items: center;
-}
-
-.main-footer-container ul {
-    flex-grow: 1;
-    text-align: end;
-}
-
-.footer-nav li {
-    padding: 0 .5em;
-}
-
-.footer-nav img {
-    width: 30px;
-    height: 30px;
-}
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+  }
+  
+  .main-footer {
+      background-color: #56CCF2;
+      color: white;
+      /* padding: .25em 0; */
+      width: 100%
+  }
+  
+  .main-footer-container{
+      display: flex;
+      color: white;
+      background-color: #56CCF2;
+      align-items: center;
+      width: 100%;
+  }
+  
+  .band-n{
+      margin-right: 26%;
+      font-size: 40px;
+      color: white;
+  }
+  
+  .main-footer-container ul {
+      flex-grow: 1;
+      text-align: end;
+  }
+  
+  .footer-nav li {
+      padding: 0 .8em;
+  }
+  
+  .footer-nav img {
+      width: 30px;
+      height: 30px;
+  }
 
 .btn {
     text-align: center;
@@ -220,6 +262,7 @@ html, body {
 
 .shop-item-image {
     height: 200px;
+    width: 200px;
 }
 
 .shop-item-details {
@@ -320,14 +363,22 @@ html, body {
 .cart-total {
     text-align: end;
     margin-top: 10px;
-    margin-right: 10px;
+    margin-right: 40px;
 }
+
+.cart-tax-title{
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 40px;
+
+ }
 
 .cart-total-title {
     font-weight: bold;
     font-size: 1.5em;
     color: black;
-    margin-right: 20px;
+    margin-right: 30px;
 }
 
 .cart-total-price {
@@ -335,8 +386,13 @@ html, body {
     font-size: 1.1em;
 }
 
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
 .btn-purchase {
-    display: block;
+    display: inline-block;
     margin: 40px auto 80px auto;
     font-size: 1.75em;
 }
@@ -348,7 +404,6 @@ html, body {
     
 }
 
-
 .container-about{
     padding-top: 100px;
 }
@@ -357,14 +412,10 @@ html, body {
     display: none;
 }
 
-
-
-
 .suite{
     margin-right: 65px;
     margin-left: 5px;
 }
-
 
 #province{
     margin-right: 257px;
@@ -395,9 +446,6 @@ section{
         font-weight: bold;
         width: 150px;
         height: 50px;
-        
-
-
     }
 
     form{
@@ -414,13 +462,18 @@ section{
         margin-top: 10px;
     }
 
-    .N-BTn{
-        margin-left: 5px;
-        padding: 8px;
-        color: white;
-        background-color: #56CCF2;
-        border: none;
-        border-radius: .3em;
-        font-weight: bold;
-    }
+#btn1{
+    margin-left: 5px;
+   padding: 8px;
+}
+
+.N-BTn{
+    margin-left: 5px;
+    padding: 8px;
+    color: white;
+    background-color: #56CCF2;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
 
