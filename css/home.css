@@ -58,7 +58,7 @@ html, body {
     padding-bottom: 30px;
 }
 
-.band-name {
+#h1 {
     text-align: center;
     margin: 0;
     font-size: 4em;
@@ -67,124 +67,57 @@ html, body {
     color: white;
 }
 
-.band-name-large {
+#h1 {
     font-size: 6em;
 }
 
-#form{
-    width: 80%;
+.container-fluid{
     margin-left: auto;
     margin-right: auto;
-    border: solid black 1px;
-    padding: 1%;
     margin-top: 2%;
     margin-bottom: 2%;
-    background-color: aliceblue;
+    width: 100%;
 }
 
-#radio-btn{
-    margin-left: 30%;
+#option-btn{
+    color: white;
+    background-color: rgb(86, 204, 242);
+    align-content: center;
+    padding: 1%;
+    width: 25%;
+    margin-left: 25%;
+    font-weight: bolder;
 }
 
-#radio-btn1{
-    margin-left: 15%;
+.carousel-inner{
+    width: 78%;
+    margin-left: auto;
     margin-right: auto;
+    margin-bottom: 2%;
+    border: solid black 2px;
 }
 
-.row {
-    display: -ms-flexbox; /* IE10 */
-    display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
-    flex-wrap: wrap;
-    margin: 0 -16px;
-  }
-  
-  .col-25 {
-    -ms-flex: 25%; /* IE10 */
-    flex: 25%;
-  }
-  
-  .col-50 {
-    -ms-flex: 50%; /* IE10 */
-    flex: 50%;
-  }
-  
-  .col-75 {
-    -ms-flex: 75%; /* IE10 */
-    flex: 75%;
-  }
-  
-  .col-25,
-  .col-50,
-  .col-75 {
-    padding: 0 16px;
-  }
-  
-  .container {
-    background-color: #f2f2f2;
-    padding: 5px 20px 15px 20px;
-    border: 1px solid lightgrey;
-    border-radius: 3px;
-  }
-  
-  input[type=text] {
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-  }
-  
-  label {
-    margin-bottom: 10px;
-    display: block;
-  }
-  
-  .icon-container {
-    margin-bottom: 20px;
-    padding: 7px 0;
-    font-size: 24px;
-  }
-  
-  .btn {
-    background-color:  rgb(86, 204, 242);
+#option-btn1{
     color: white;
-    padding: 12px;
-    margin: 10px 0;
-    border: none;
-    width: 100%;
-    border-radius: 3px;
-    cursor: pointer;
-    font-size: 17px;
-  }
-  
-  .btn:hover {
-    background-color:  rgb(86, 204, 242);
-    color: white;
-  }
-  
-  a {
-    color: #2196F3;
-  }
-  
-  hr {
-    border: 1px solid lightgrey;
-  }
-  
-  span.price {
-    float: right;
-    color: grey;
-  }
-  
-  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
-  @media (max-width: 800px) {
-    .row {
-      flex-direction: column-reverse;
-    }
-    .col-25 {
-      margin-bottom: 20px;
-    }
-  }
+    background-color: rgb(86, 204, 242);
+    align-content: center;
+    padding: 1%;
+    width: 25%;
+    margin-left: auto;
+    font-weight: bolder;
+}
+
+#img1{
+    height: 350px;
+}
+
+#img2{
+    height: 350px;
+}
+
+#img3{
+    height: 350px;
+}
 
 .container {
     border-radius: 5px;
@@ -195,7 +128,9 @@ html, body {
       background-color: #56CCF2;
       color: white;
       /* padding: .25em 0; */
-      width: 100%
+      width: 100%;
+      padding: 1%;
+      padding-top: 1.5%;
   }
   
   .main-footer-container{
@@ -207,8 +142,9 @@ html, body {
   }
   
   .band-n{
-      margin-right: 46%;
-      font-size: 30px;
+      margin-left: 70px;
+      margin-right: 40%;
+      font-size: 40px;
       color: white;
   }
   

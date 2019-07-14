@@ -3,7 +3,7 @@
     <head>
         <title>The Pizza Store</title>
         <meta name="description" content="This is the description">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style-location.css">
         <script src="js/store.js" async></script>
 
         <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
@@ -25,9 +25,9 @@
         <header class="main-header">
             <nav class="main-nav nav">
                 <ul>
-                    <li><a href="store.html">HOME</a></li>
-                    <li><a href="index.html">MENU</a></li>
-                    <li><a href="about.html">CONTACT</a></li>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
                     <li><a href="location.html">LOCATION</a></li>
                 </ul>
             </nav>
@@ -37,17 +37,17 @@
 
   <body>
     <h4>
-      Enter your address to get Directions to Pizza store.
+      <p id="p1">For Directions, Please Enter Your Address:</p>
       <span class="badge badge-secondary"></span>
     </h4>
-    <div class="container">
+    <div id="div1" class="container">
       <!-- Content here -->
 
-      <input id="userAddress" type="text" />
-      <button type="button" class="btn btn-primary" onclick="addDirections()">
+      <input id="userAddress" type="text" value="55 St George">
+      <button id="btn-1" type="button" class="btn btn-primary" onclick="addDirections()">
         Directions
       </button>
-      <button type="button" class="btn2 btn btn-primary">update the start location</button>
+      <button id="btn-2" type="button" class="btn2 btn btn-primary">Update the start location</button>
 
       <!-- <button onclick="addDirections()">Directions</button><br /><br /> -->
 
@@ -62,23 +62,23 @@
       </p>
     </div>
 
-    <footer class="main-footer">
-      <div class="container main-footer-container">
-          <h3 class="band-name">THE PIZZA STORE</h3>
+    <footer id="footer1" class="main-footer">
+      <div id="footer"  class="container main-footer-container">
+          <h3 class="band-n">THE PIZZA STORE</h3>
           <ul class="nav footer-nav">
               <li>
                   <a href="https://accounts.google.com/ServiceLogin/signinchooser?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank">
-                      <img src="Images/gmail.jpg">
+                      <img  class="footer-logo" src="Images/gmail.jpg" width="50px">
                   </a>
               </li>
               <li>
                   <a href="https://www.spotify.com" target="_blank">
-                      <img src="Images/youtube.jpg">
+                      <img src="Images/youtube.jpg" width="50px">
                   </a>
               </li>
               <li>
                   <a href="https://www.facebook.com/" target="_blank">
-                      <img src="Images/facebook.jpg">
+                      <img src="Images/facebook.jpg" width="50px">
                   </a>
               </li>
           </ul>
