@@ -414,8 +414,13 @@ section{
         margin-top: 10px;
     }
 
-    #btn1{
+    .N-BTn{
         margin-left: 5px;
         padding: 8px;
+        color: white;
+        background-color: #56CCF2;
+        border: none;
+        border-radius: .3em;
+        font-weight: bold;
     }
 

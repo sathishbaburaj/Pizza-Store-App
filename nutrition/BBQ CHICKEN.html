@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>test</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+        <div class="nutrition"></div>    
+        <div class="calories"></div>
+        <div class="cholesterol"></div>
+        <div class="dietary_fiber"></div>
+        <div class="potassium"></div>
+        <div class="protein"></div>
+        <div class="saturated_fat"></div>
+        <div class="sodium"></div>
+        <div class="sugar"></div>
+        <div class="total_carbohydrate"></div>
+        <div class="total_fat"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+
+        var APIKey = "6166d06636850c987ca6129da7d7625f";
+        var APPID = "fc22aa95";
+
+        var foodURL = "https://trackapi.nutritionix.com/v2/search/instant?query=BBQ chicken";
+        var nutritionURL = "https://trackapi.nutritionix.com/v2/natural/nutrients";
+
+
+
+        
+
+        $.ajax({
+            url: foodURL,
+            method: "GET",
+            headers: {
+                "x-app-id": APPID,
+                "x-app-key": "6166d06636850c987ca6129da7d7625f"
+            },
+        }).then(function (foodsResponse) {
+            console.log(foodsResponse);
+            $.ajax({
+                url: nutritionURL,
+                method: "POST",
+                headers: {
+                    "x-app-id": APPID,
+                    "x-app-key": "6166d06636850c987ca6129da7d7625f"
+                },
+                data: jQuery.param({ "query": "BBQ chicken pizza" })
+            }).then(function (nutritionResponse) {
+               
+
+
+
+                $(".nutrition").html("<h3>" + 'BBQ chicken' + " Nutrition Facts</h3>");
+                $(".calories").text("calories:" + nutritionResponse.foods[0].nf_calories + '%');
+                $(".cholesterol").text("cholesterol:" + nutritionResponse.foods[0].nf_cholesterol + '%');
+                $(".potassium").text("potassium:" + nutritionResponse.foods[0].nf_potassium + '%');
+                $(".protein").text("protein:" + nutritionResponse.foods[0].nf_protein + '%');
+                $(".saturated_fat").text("saturated fat:" + nutritionResponse.foods[0].nf_saturated_fat + '%');
+                $(".sodium").text("sodium:" + nutritionResponse.foods[0].nf_sodium + '%');
+                $(".sugar").text("sugar:" + nutritionResponse.foods[0].nf_sugars + '%');
+                $(".total_carbohydrate").text("total carbohydrate:" + nutritionResponse.foods[0].nf_total_carbohydrate + '%');
+                $(".total_fat").text("total fat:" + nutritionResponse.foods[0].nf_total_fat + '%');
+
+                
+
+            });
+        });   
+
+         
+      
+
+      
+           
+        
+
+    </script>
+</body>
+
+</html>
