@@ -59,6 +59,24 @@ html, body {
     cursor: pointer;
 }
 
+#deal1{
+    width: 350px;
+    border-radius: 10%;
+    border: solid 1px;
+}
+
+#deal2{
+    width: 350px;
+    border-radius: 10%;
+    border: solid 1px;
+}
+
+#deal3{
+    width: 350px;
+    border-radius: 10%;
+    border: solid 1px;
+}
+
 .main-header {
     background-color: rgba(0, 0, 0, .6);
     background-blend-mode: multiply;
@@ -227,6 +245,7 @@ html, body {
 
 .shop-item-image {
     height: 200px;
+    width: 200px;
 }
 
 .shop-item-details {
@@ -350,8 +369,13 @@ html, body {
     font-size: 1.1em;
 }
 
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
 .btn-purchase {
-    display: block;
+    display: inline-block;
     margin: 40px auto 80px auto;
     font-size: 1.75em;
 }
@@ -363,7 +387,6 @@ html, body {
     
 }
 
-
 .container-about{
     padding-top: 100px;
 }
@@ -372,14 +395,10 @@ html, body {
     display: none;
 }
 
-
-
-
 .suite{
     margin-right: 65px;
     margin-left: 5px;
 }
-
 
 #province{
     margin-right: 257px;
@@ -410,9 +429,6 @@ section{
         font-weight: bold;
         width: 150px;
         height: 50px;
-        
-
-
     }
 
     form{
@@ -429,8 +445,8 @@ section{
         margin-top: 10px;
     }
 
-    #btn1{
-        margin-left: 5px;
-        padding: 8px;
-    }
+#btn1{
+    margin-left: 5px;
+   padding: 8px;
+}
 
