@@ -27,7 +27,7 @@ function createMap(err, response) {
   var map = L.mapquest.map("map", {
       center: [43.6532, -79.3832],
       layers: L.mapquest.tileLayer("map"),
-      zoom: 7
+      zoom: 5
     });
   
   var directionsLayer = L.mapquest
@@ -46,12 +46,14 @@ function createMap(err, response) {
   narrativeControl.addTo(map);
 }
 
-function updateButton2(){
-  var inputValue =document.getElementById('userAddress').value;
-  L.mapquest.directions().route({
-    start:inputValue,
-    end:"55 st george street,Toronto,Ontario"
-  });
-}
+// function updateButton2(){
+//   var inputValue =document.getElementById('userAddress').value;
+//   L.mapquest.directions().route({
+//     start:inputValue,
+//     end:"55 st george street,Toronto,Ontario"
+//   });
+//   console.log(inputValue);
 
-var btn2 = document.querySelector(".btn2").addEventListener("click", updateButton2);
+// }
+
+// var btn2 = document.querySelector(".btn2").addEventListener("click", updateButton2);

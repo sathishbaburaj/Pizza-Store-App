@@ -166,3 +166,7 @@ html, body {
 #map{
     padding: 1%;
 }
+.route-summary{
+    padding:1%;
+    margin-top: 70%;
+}
