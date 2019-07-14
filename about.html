@@ -1,24 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/store.js" async></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <title>Contact_Page</title>
-</head>
-<body>
-    <header class="main-header">
-        <nav class="main-nav nav">
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-               
-            </ul>
-        </nav>
-        <h1 class="band-name band-name-large">The Pizza Store</h1>
+<html>
+    <head>
+        <title>The Pizza Store</title>
+        <meta name="description" content="This is the description">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/store.js" async></script>
+        
+    </head>
+    <body>
+        <header class="main-header">
+            <nav class="main-nav nav">
+                <ul>
+                    <li><a href="store.html">HOME</a></li>
+                    <li><a href="index.html">MENU</a></li>
+                    <li><a href="about.html">CONTACT</a></li>
+                    <li><a href="location.html">LOCATION</a></li>
+                </ul>
+            </nav>
+            <h1 class="band-name band-name-large">The Pizza Store</h1>
     </header>
 
     <div class="container-about">
@@ -45,14 +44,14 @@
                 
                     <div class="form-group">
                         <label for="suite/Apt#">Suite/Apt #</label>
-                        <input type="password" class="form-control" id="suite/Apt#" placeholder="Suite/Apt#">
+                        <input type="Suite" class="form-control" id="suite/Apt#" placeholder="Suite/Apt#">
                     </div>
 
                    
                     <div class="form-group">
                         <strong>*</strong>
                         <label for="city"><b>City</b></label>
-                        <input type="password" class="form-control" id="city" placeholder="City" required>
+                        <input type="city" class="form-control" id="city" placeholder="City" required>
                     </div>
                     
                     <div class="form-group">
@@ -85,12 +84,37 @@
 
                   
 
-                    <button type="submit" class="btn-btn-primary">Submit</button>
+                   <a href="location.html"> 
+                       <button type="submit" class="btn-btn-primary">Submit</button>
+                </a>
 
                 </form>
                 
             </section>
 
-        </div>        
+        </div>  
+        
+        <footer class="main-footer">
+            <div class="container main-footer-container">
+                <h3 class="band-name">THE PIZZA STORE</h3>
+                <ul class="nav footer-nav">
+                    <li>
+                        <a href="https://accounts.google.com/ServiceLogin/signinchooser?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank">
+                            <img src="Images/gmail.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.spotify.com" target="_blank">
+                            <img src="Images/youtube.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <img src="Images/facebook.jpg">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
 </body>
 </html>
