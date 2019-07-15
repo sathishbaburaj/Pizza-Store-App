@@ -5,80 +5,67 @@
     <meta charset="utf-8">
     <title>test</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-
+    <link rel="stylesheet" href="../css/nutrition.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/cheese-lover-pizza.js"></script>
 </head>
 
 <body>
-        <div class="nutrition"></div>    
-        <div class="calories"></div>
-        <div class="cholesterol"></div>
-        <div class="dietary_fiber"></div>
-        <div class="potassium"></div>
-        <div class="protein"></div>
-        <div class="saturated_fat"></div>
-        <div class="sodium"></div>
-        <div class="sugar"></div>
-        <div class="total_carbohydrate"></div>
-        <div class="total_fat"></div>
+<h3 class ="nutrition">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript">
+</h3>
+<table class="mtable2 tab">
+  <tr>
+    <th>Nutrient</th>
+    <th>% Calories</th>
+  </tr>
+  <tr class="tcw">
+    <td class= 'r1col1'></td>
+    <td class= 'r1col2'></td>
+  </tr>
+    <tr class="tcw">
+    <td class= 'r2col1'></td>
+    <td class= 'r2col2'></td>
+  </tr>
+   <tr class="tcw">
+    <td class= 'r3col1'></td>
+    <td class= 'r3col2'></td>
+  </tr>
+    <tr class="tcw">
+    <td class= 'r4col1'></td>
+    <td class= 'r4col2'></td>
+  </tr>
+  
+  <tr class="tcw">
+    <td class= 'r5col1'></td>
+    <td class= 'r5col2'></td>
+  </tr>
 
-        var APIKey = "6166d06636850c987ca6129da7d7625f";
-        var APPID = "fc22aa95";
-
-        var foodURL = "https://trackapi.nutritionix.com/v2/search/instant?query=cheese lover";
-        var nutritionURL = "https://trackapi.nutritionix.com/v2/natural/nutrients";
-
-
-
+ <tr class="tcw">
+    <td class= 'r6col1'></td>
+    <td class= 'r6col2'></td>
+  </tr>
+   <tr class="tcw">
+    <td class= 'r7col1'></td>
+    <td class= 'r7col2'></td>
+  </tr>  <tr class="tcw">
+    <td class= 'r7col1'></td>
+    <td class= 'r7col2'></td>
+  </tr>
+    <tr class="tcw">
+    <td class= 'r8col1'></td>
+    <td class= 'r8col2'></td>
+  </tr>
+   <tr class="tcw">
+    <td class= 'r9col1'></td>
+    <td class= 'r9col2'></td>
+  </tr>
+</table>
         
 
-        $.ajax({
-            url: foodURL,
-            method: "GET",
-            headers: {
-                "x-app-id": APPID,
-                "x-app-key": "6166d06636850c987ca6129da7d7625f"
-            },
-        }).then(function (foodsResponse) {
-            console.log(foodsResponse);
-            $.ajax({
-                url: nutritionURL,
-                method: "POST",
-                headers: {
-                    "x-app-id": APPID,
-                    "x-app-key": "6166d06636850c987ca6129da7d7625f"
-                },
-                data: jQuery.param({ "query": "cheese lover pizza" })
-            }).then(function (nutritionResponse) {
-                
 
-                $(".nutrition").html("<h3>" + 'cheese lover' + " Nutrition Facts</h3>");
-                $(".calories").text("calories:" + nutritionResponse.foods[0].nf_calories + '%');
-                $(".cholesterol").text("cholesterol:" + nutritionResponse.foods[0].nf_cholesterol + '%');
-                $(".potassium").text("potassium:" + nutritionResponse.foods[0].nf_potassium + '%');
-                $(".protein").text("protein:" + nutritionResponse.foods[0].nf_protein + '%');
-                $(".saturated_fat").text("saturated fat:" + nutritionResponse.foods[0].nf_saturated_fat + '%');
-                $(".sodium").text("sodium:" + nutritionResponse.foods[0].nf_sodium + '%');
-                $(".sugar").text("sugar:" + nutritionResponse.foods[0].nf_sugars + '%');
-                $(".total_carbohydrate").text("total carbohydrate:" + nutritionResponse.foods[0].nf_total_carbohydrate + '%');
-                $(".total_fat").text("total fat:" + nutritionResponse.foods[0].nf_total_fat + '%');
 
-                
-
-            });
-        });   
-
-         
-      
-
-      
-           
-        
-
-    </script>
+  
 </body>
 
 </html>
