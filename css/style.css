@@ -126,6 +126,8 @@ html, body {
 
 .container {
     border-radius: 5px;
+    margin-bottom: 2%;
+    margin-top: 2%;
     background-color: #f2f2f2;
   }
   
@@ -221,6 +223,78 @@ html, body {
     border: none;
 }
 
+#b{
+    margin-left: 150px;
+}
+
+#b1{
+    margin-left: 150px;
+}
+
+#b2{
+    margin-left: 150px;
+}
+
+#b3{
+    margin-left: 40px;
+}
+
+#b4{
+    margin-left: 40px;
+}
+
+#b5{
+    margin-left: 40px;
+}
+
+#b6{
+    margin-left: 40px;
+}
+
+#b7{
+    margin-left: 40px;
+}
+
+#b8{
+    margin-left: 40px;
+}
+
+#b9{
+    margin-left: 40px;
+}
+
+#b10{
+    margin-left: 40px;
+}
+
+#b11{
+    margin-left: 40px;
+}
+
+#b12{
+    margin-left: 40px;
+}
+
+#b13{
+    margin-left: 40px;
+}
+
+#b14{
+    margin-left: 40px;
+}
+
+#b15{
+    margin-left: 40px;
+}
+
+#b16{
+    margin-left: 40px;
+}
+
+#b17{
+    margin-left: 40px;
+}
+
 .tour-item {
     display: inline-block;
     padding-right: .5em;
@@ -263,6 +337,8 @@ html, body {
 .shop-item-image {
     height: 200px;
     width: 200px;
+    text-decoration: none;
+    list-style: none;
 }
 
 .shop-item-details {
@@ -476,4 +552,108 @@ section{
     border-radius: .3em;
     font-weight: bold;
 }
+
+#form{
+    width: 71%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f2f2f2;
+    padding: 1%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#radio-btn{
+    margin-left: 30%;
+}
+
+#radio-btn1{
+    margin-left: 15%;
+    margin-right: auto;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -16px;
+  }
+  
+  .col-25 {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+  }
+  
+  .col-50 {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+  }
+  
+  .col-75 {
+    -ms-flex: 75%; /* IE10 */
+    flex: 75%;
+  }
+  
+  .col-25,
+  .col-50,
+  .col-75 {
+    padding: 0 16px;
+  }
+  
+  .container {
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border-radius: 3px;
+  }
+  
+  input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  label {
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+  }
+  
+  .btn {
+    background-color:  rgb(86, 204, 242);
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+  }
+  
+  .btn:hover {
+    background-color:  rgb(86, 204, 242);
+    color: white;
+  }
+  
+  a {
+    color: #2196F3;
+  }
+  
+  hr {
+    border: 1px solid lightgrey;
+  }
+  
+  span.price {
+    float: right;
+    color: grey;
+  }
+
 
