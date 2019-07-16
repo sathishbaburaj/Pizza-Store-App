@@ -117,7 +117,9 @@ html, body {
   }
 
 #userAddress{
-    padding: 0.5%;
+    padding: 1.7%;
+    padding-left: 1.5%;
+    padding-right: 13%;
     margin-left: 1%;
 }
 
@@ -136,9 +138,10 @@ html, body {
     margin-left: 0.5%;
     padding-left: 5%;
     padding-right: 5%;
-    padding-top: 0.8%;
+    /* padding-top: 0.8%; */
     background-color: #56CCF2;
     border: none;
+    font-size: 30px;
 }
 
 #btn-1:hover{
