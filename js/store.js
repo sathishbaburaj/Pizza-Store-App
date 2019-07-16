@@ -24,6 +24,14 @@ if (document.readyState == 'loading') {
     }
   
     document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked);
+
+    
+    //   $("#form").hide();
+        
+    // $(".btn").click(function(){
+    //   $("form").show();
+    // });
+    
   };
   
 
