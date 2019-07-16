@@ -36,17 +36,25 @@
 
 
   <body>
-    <h4>
-      <p id="p1">For Directions, Please Enter Your Address:</p>
-      <span class="badge badge-secondary"></span>
-    </h4>
-    <div id="div1" class="container">
+      <div id="div" class="container">
+        <center><p id="p1">Contact Us</p></center>
+        <p id="p"><b>Pizza Store Location:</b><br>
+          55 St George <br>
+          Toronto ON<br>
+          Ph: 555-555-5555<br>
+          Email: pizza@gmail.com<br>
+        </p>
+      </div>
 
+    <div id="div1" class="container">
+      <h4>
+        <p id="p1">For Directions, Please Enter Your Address:</p>
+        <span class="badge badge-secondary"></span>
+      </h4>
       <input id="userAddress" type="text" value="55 St George" required>
       <button id="btn-1" type="button" class="btn btn-primary" onclick="addDirections()">
         Directions
       </button>
-      <!-- <button id="btn-2" type="button" class="btn2 btn btn-primary">Update the start location</button> -->
 
       <p id="map">
         <img

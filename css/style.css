@@ -128,13 +128,11 @@ html, body {
     border-radius: 5px;
     margin-bottom: 2%;
     margin-top: 2%;
-    background-color: #f2f2f2;
   }
   
   .main-footer {
       background-color: #56CCF2;
       color: white;
-      /* padding: .25em 0; */
       width: 100%
   }
   
@@ -576,25 +574,25 @@ section{
 }
 
 .row {
-    display: -ms-flexbox; /* IE10 */
+    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
+    -ms-flex-wrap: wrap; 
     flex-wrap: wrap;
     margin: 0 -16px;
   }
   
   .col-25 {
-    -ms-flex: 25%; /* IE10 */
+    -ms-flex: 25%;
     flex: 25%;
   }
   
   .col-50 {
-    -ms-flex: 50%; /* IE10 */
+    -ms-flex: 50%;
     flex: 50%;
   }
   
   .col-75 {
-    -ms-flex: 75%; /* IE10 */
+    -ms-flex: 75%;
     flex: 75%;
   }
   
@@ -605,7 +603,7 @@ section{
   }
   
   .container {
-    background-color: #f2f2f2;
+    background-color: none;
     padding: 5px 20px 15px 20px;
     border-radius: 3px;
   }
