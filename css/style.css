@@ -333,6 +333,9 @@ html, body {
     color: #333;
     margin-bottom: 15px;
 }
+.li-items{
+    list-style-type:none;
+}
 
 .shop-item-image {
     height: 200px;
