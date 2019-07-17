@@ -4,8 +4,10 @@
     <head>
         <title>The Pizza Store</title>
         <meta name="description" content="This is the description">
+        <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="css/style.css">
-        <script src="js/store.js" async></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="js/store.js" async></script>             
         
     </head>
     <body>
@@ -252,7 +254,7 @@
                           </div>
                           
                         </div>
-                        <input type="submit" value="Submit" class="btn">
+                        <input id="sbtn" type="submit" value="Submit" class="btn">
                       </form>
                     </div>
                   </div>
@@ -281,6 +283,15 @@
                         </li>
                     </ul>
                 </div>
-            </footer>
+        </footer> 
+
+        <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+
+        <script src="js/firebase.js"></script>  
+
+
+
+                   
     </body>
 </html>
