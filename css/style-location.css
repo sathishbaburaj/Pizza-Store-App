@@ -54,6 +54,7 @@ html, body {
     border: none;
     text-decoration: none;
 }
+
 .main-header {
     background-color: rgba(0, 0, 0, .6);
     background-blend-mode: multiply;
@@ -75,10 +76,11 @@ html, body {
 }
   
   .main-footer {
+      float: none;
       background-color: #56CCF2;
       color: white;
-      /* padding: .25em 0; */
       width: 100%;
+      margin-top: 580px;
       padding-top: 1%;
       padding-bottom: 1%;
   }
@@ -115,14 +117,19 @@ html, body {
   }
 
 #userAddress{
-    padding: 0.5%;
+    padding: 1.7%;
+    padding-left: 1.5%;
+    padding-right: 13%;
     margin-left: 1%;
 }
 
+#p{
+    color: white;
+    padding: 2%;
+}
+
 #p1{
-    margin-left: 15%;
-    margin-top: 2%;
-    color: #56CCF2;
+    color: white;
     font-weight: bolder;
     font-size: 30px;
 }
@@ -131,9 +138,10 @@ html, body {
     margin-left: 0.5%;
     padding-left: 5%;
     padding-right: 5%;
-    padding-top: 0.8%;
+    /* padding-top: 0.8%; */
     background-color: #56CCF2;
     border: none;
+    font-size: 30px;
 }
 
 #btn-1:hover{
@@ -153,19 +161,28 @@ html, body {
     background-color: #2D9CDB;
 }
 
+#div{
+    background-color: silver;
+    width: 28%;
+    padding-top: 1%;
+    margin-top: 1.5%;
+   margin-right: 1%; 
+   float: right;
+}
 
 #div1{
     background-color: silver;
-    width: 70%;
+    width: 65%;
     padding-top: 1%;
-   margin-left: auto;
-   margin-right: auto;
-    
+    margin-top: 1.5%;
+   margin-left: 3%;
+   float: left; 
 }
 
 #map{
     padding: 1%;
 }
+
 .route-summary{
     padding:1%;
     margin-top: 70%;
